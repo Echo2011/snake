@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake</title>
+</head>
+<body>
+<script src="Game.js"></script>
+<script src="Map.js"></script>
+<script src="Food.js"></script>
+<script src="Snake.js"></script>
+
+<script>
+      var game=new Game();
+      game.gameStart();//游戏开始
+
+  // 调用地图
+//  var m = new Map();
+//  m.render();
+//
+//  // 调用食物
+//  var food = new Food({map: m});
+//  food.render();
+//
+//  // 调用蛇
+//  var snake = new Snake({map: m});
+//
+//  var timer = setInterval(function () {
+//    // 清空地图,否则当蛇移动的时候,原来的身体还在
+//    m.map.innerHTML = "";
+//    snake.render();
+//    food.render();
+//    impact(); // 碰撞检测
+//    gameover(); // 检测是否结束游戏
+//  }, 200);
+//
+//  function gameover(){
+//    var head = snake.body[0] // 蛇头
+//    if(head.x < 0 || head.y < 0 || head.x > m.col-1 || head.y > m.row-1 ){
+//      clearInterval(timer);
+//      alert("gameover");
+//    }
+//  }
+//
+//  // 让用户控制蛇的移动
+//  window.onkeydown = function (e) {
+//    switch (e.keyCode){
+//      case 37:
+//        snake.direction = "left";
+//        break;
+//      case 39:
+//        snake.direction = "right";
+//        break;
+//      case 40:
+//        snake.direction = "down";
+//        break;
+//      case 38:
+//        snake.direction = "up";
+//        break;
+//    }
+//  }
+//
+//  // 碰撞检测
+//  // 当蛇头和食物的xy相等时,食物被吃掉,同时在其他地方随机产生一个新的食物,同时蛇的身体增加一节
+//    function impact(){
+//      if(snake.body[0].x == food.x && snake.body[0].y == food.y){
+////        alert("被吃了");
+//        snake.eat();
+//        food.setPos(); // 让食物重新随机位置
+//
+//      }
+//    }
+
+  //    var m=new Map({color:'pink'});
+  //    m.render();
+  //
+  //    var  food=new Food({map:m});
+  //    food.setPos();
+  //
+  //
+  //    var snake=new Snake({map:m});
+  //
+  //
+  //    var t=setInterval(function(){
+  //        m.map.innerHTML='';
+  //        food.render();
+  //        snake.move();
+  //        snake.render();
+  //        impact();//碰撞检测
+  //        gameover();//是否结束
+  //    },200);
+  //
+  //    //用户控制
+  //    window.onkeydown=function(e){
+  //       var code=e.keyCode;
+  //        switch (code){
+  //            case 37:
+  //                snake.direction='left';
+  //                 break;
+  //            case 38:
+  //                snake.direction='up';
+  //                break;
+  //            case 39:
+  //                snake.direction='right';
+  //                break;
+  //            case 40:
+  //                snake.direction='down';
+  //                break;
+  //        }
+  //    }
+  //
+  //    //碰撞检测
+  //    //判断蛇头和食物坐标是否重合
+  //    function impact(){
+  //        var head=snake.body[0];
+  //        if(head.x==food.x&&head.y==food.y){
+  ////            alert('开吃!');
+  //            snake.eat();
+  //            food.setPos();//让食物重新随机位置
+  //        }
+  //    }
+  //
+  //    function gameover(){
+  //        var head=snake.body[0];
+  //        if(head.x<0||head.y<0||head.x>m.col-1||head.y>m.row-1){
+  //            clearInterval(t);//停止定时器
+  //            alert('gameover!');
+  //        }
+  //    }
+
+  //1-大局观
+  //2-细节
+  //框架 架构 架构师
+  //框架 --更为合理的代码结构
+
+</script>
+</body>
+</html>
